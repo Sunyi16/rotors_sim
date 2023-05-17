@@ -1,0 +1,1 @@
+set(ORDERED_PATHS "/home/sunyi/data/rotors_ws/devel/.private/rotors_control/lib;/home/sunyi/catkin_ws/devel/lib;/opt/ros/melodic/lib")

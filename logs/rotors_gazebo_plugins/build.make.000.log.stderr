@@ -1,0 +1,10 @@
+MagneticField.proto: warning: Import quaternion.proto but not used.
+In file included from [01m[K/home/sunyi/data/rotors_ws/src/rotors_simulator/rotors_gazebo_plugins/src/gazebo_pressure_plugin.cpp:18:0[m[K:
+[01m[K/home/sunyi/data/rotors_ws/src/rotors_simulator/rotors_gazebo_plugins/include/rotors_gazebo_plugins/gazebo_pressure_plugin.h:22:10:[m[K [01;31m[Kfatal error: [m[Kglog/logging.h: 没有那个文件或目录
+ #include [01;31m[K<glog/logging.h>[m[K
+          [01;31m[K^~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/rotors_gazebo_pressure_plugin.dir/src/gazebo_pressure_plugin.cpp.o] Error 1
+make[1]: *** [CMakeFiles/rotors_gazebo_pressure_plugin.dir/all] Error 2
+make[1]: *** 正在等待未完成的任务....
+make: *** [all] Error 2

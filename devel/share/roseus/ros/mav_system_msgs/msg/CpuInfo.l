@@ -1,0 +1,1 @@
+/home/sunyi/data/rotors_ws/devel/.private/mav_system_msgs/share/roseus/ros/mav_system_msgs/msg/CpuInfo.l

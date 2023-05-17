@@ -1,0 +1,55 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_0741f/fast"
+/usr/bin/make -f CMakeFiles/cmTC_0741f.dir/build.make CMakeFiles/cmTC_0741f.dir/build
+make[1]: 进入目录“/home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_0741f.dir/CheckSymbolExists.c.o
+/usr/lib/ccache/cc    -o CMakeFiles/cmTC_0741f.dir/CheckSymbolExists.c.o   -c /home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_0741f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0741f.dir/link.txt --verbose=1
+/usr/lib/ccache/cc      -rdynamic CMakeFiles/cmTC_0741f.dir/CheckSymbolExists.c.o  -o cmTC_0741f 
+CMakeFiles/cmTC_0741f.dir/CheckSymbolExists.c.o：在函数‘main’中：
+CheckSymbolExists.c:(.text+0x1b)：对‘pthread_create’未定义的引用
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_0741f.dir/build.make:97: recipe for target 'cmTC_0741f' failed
+make[1]: *** [cmTC_0741f] Error 1
+make[1]: 离开目录“/home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_0741f/fast' failed
+make: *** [cmTC_0741f/fast] Error 2
+
+File /home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_897ca/fast"
+/usr/bin/make -f CMakeFiles/cmTC_897ca.dir/build.make CMakeFiles/cmTC_897ca.dir/build
+make[1]: 进入目录“/home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_897ca.dir/CheckFunctionExists.c.o
+/usr/lib/ccache/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTC_897ca.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.10/Modules/CheckFunctionExists.c
+Linking C executable cmTC_897ca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_897ca.dir/link.txt --verbose=1
+/usr/lib/ccache/cc  -DCHECK_FUNCTION_EXISTS=pthread_create    -rdynamic CMakeFiles/cmTC_897ca.dir/CheckFunctionExists.c.o  -o cmTC_897ca -lpthreads 
+/usr/bin/ld: 找不到 -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTC_897ca.dir/build.make:97: recipe for target 'cmTC_897ca' failed
+make[1]: *** [cmTC_897ca] Error 1
+make[1]: 离开目录“/home/sunyi/data/rotors_ws/build/mav_planning_msgs/CMakeFiles/CMakeTmp”
+Makefile:126: recipe for target 'cmTC_897ca/fast' failed
+make: *** [cmTC_897ca/fast] Error 2
+
+
